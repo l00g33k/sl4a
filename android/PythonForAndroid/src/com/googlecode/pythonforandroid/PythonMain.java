@@ -148,7 +148,7 @@ public class PythonMain extends Main {
     });
     mButtonBrowse = new Button(this);
     mButtonBrowse.setLayoutParams(marginParams);
-    mButtonBrowse.setText("Browse Modules");
+    mButtonBrowse.setText("Browse Modules l00");
     mLayout.addView(mButtonBrowse);
     mButtonBrowse.setOnClickListener(new OnClickListener() {
       public void onClick(View v) {
