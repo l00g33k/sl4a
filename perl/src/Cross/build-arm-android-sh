@@ -62,9 +62,9 @@ agcc_test () {
 CROSS_NAME=arm
 #CCPREF=arm-eabi-
 CCPREF=arm-linux-androideabi-
-#CROSSCC=agcc
-CROSSCC=aagcc
+CROSSCC=agcc
 
+echo ::here:: agcc test
 if [[ "x$1" != xnoconf* ]] ; then
   echo "[configuring for host]"
   echo "[testing for $CROSSCC]"
@@ -78,6 +78,7 @@ if [[ "x$1" != xnoconf* ]] ; then
   esac
   cleanup
   # Configure on HOST
+  echo ::here:: .Configure ...
   ./Configure -des -Dprefix=./dummy -Dusedevel || exit 1
 fi
 
@@ -87,7 +88,7 @@ cp -f Cross/config.sh-arm-linux-android Cross/config-${CROSS_NAME}.sh
 echo "[building for host]"
 echo ::here:: make miniperl
 pwd
-make miniperl
+make miniperl.exe
 echo ::here:: make uudmap.h
 pwd
 make uudmap.h
@@ -136,7 +137,9 @@ mkdir -p ${XCOREDIR}
 cp -f *.h xlib/$CROSS_NAME
 
 mv -f Makefile Makefile.host
-rm -f GNUmakefile
+#rm -f GNUmakefile
+rm -f GNUmakefile.deleted
+mv GNUmakefile GNUmakefile.deleted
 rm -f *.o
 
 touch xlib/$CROSS_NAME/Config.pm
