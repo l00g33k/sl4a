@@ -32,7 +32,7 @@ import java.util.Map;
  */
 public abstract class Sl4aHostedInterpreter implements InterpreterDescriptor {
 
-  public static final String BASE_INSTALL_URL = "http://android-scripting.googlecode.com/files/";
+  public static final String BASE_INSTALL_URL = "https://github.com/l00g33k/sl4a/releases/download/";
   public static final String DALVIKVM = "/system/bin/dalvikvm";
 
   // TODO(damonkohler): Remove getVersion() and pull these three version methods up in to the base
@@ -71,17 +71,17 @@ public abstract class Sl4aHostedInterpreter implements InterpreterDescriptor {
 
   @Override
   public String getInterpreterArchiveUrl() {
-    return getBaseInstallUrl() + getInterpreterArchiveName();
+    return getBaseInstallUrl() + "r" + getInterpreterVersion() + "/" + getInterpreterArchiveName();
   }
 
   @Override
   public String getExtrasArchiveUrl() {
-    return getBaseInstallUrl() + getExtrasArchiveName();
+    return getBaseInstallUrl() + "r" + getInterpreterVersion() + "/" + getExtrasArchiveName();
   }
 
   @Override
   public String getScriptsArchiveUrl() {
-    return getBaseInstallUrl() + getScriptsArchiveName();
+    return getBaseInstallUrl() + "r" + getInterpreterVersion() + "/" + getScriptsArchiveName();
   }
 
   @Override

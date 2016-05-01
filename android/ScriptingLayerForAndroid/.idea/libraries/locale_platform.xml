@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="libGoogleAnalytics">
+  <library name="locale_platform">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Common/libs/libGoogleAnalytics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/locale_platform.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

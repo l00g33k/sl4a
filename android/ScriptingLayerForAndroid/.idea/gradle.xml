@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../BluetoothFacade" />
+            <option value="$PROJECT_DIR$/../Common" />
+            <option value="$PROJECT_DIR$/../InterpreterForAndroid" />
+            <option value="$PROJECT_DIR$/../QuickAction" />
+            <option value="$PROJECT_DIR$/../ScriptingLayer" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/../SignalStrengthFacade" />
+            <option value="$PROJECT_DIR$/../TextToSpeechFacade" />
+            <option value="$PROJECT_DIR$/../USBHostSerialFacade" />
+            <option value="$PROJECT_DIR$/../Utils" />
+            <option value="$PROJECT_DIR$/../WebCamFacade" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$/../BluetoothFacade" />
+            <option value="$PROJECT_DIR$/../Common" />
+            <option value="$PROJECT_DIR$/../InterpreterForAndroid" />
+            <option value="$PROJECT_DIR$/../QuickAction" />
+            <option value="$PROJECT_DIR$/../ScriptingLayer" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/../SignalStrengthFacade" />
+            <option value="$PROJECT_DIR$/../TextToSpeechFacade" />
+            <option value="$PROJECT_DIR$/../USBHostSerialFacade" />
+            <option value="$PROJECT_DIR$/../Utils" />
+            <option value="$PROJECT_DIR$/../WebCamFacade" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
