@@ -49,6 +49,8 @@ captures/
 
 #NDK
 obj/
+*.o
+*.d
 
 # https://gist.github.com/iainconnor/8605514
 # Signing files

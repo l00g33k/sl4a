@@ -1080,7 +1080,7 @@ splint: $(c)
 MAKEDEPEND = $(MAKEFILE) makedepend
 
 $(FIRSTMAKEFILE):	README $(MAKEDEPEND)
-	$(MAKE) depend MAKEDEPEND=
+#l00	$(MAKE) depend MAKEDEPEND=
 
 config.h: config_h.SH config.sh
 	$(SHELL) config_h.SH
